@@ -10,4 +10,127 @@
   --pink: #855F79;
   --dark-grey: #7C8382;
   --black: #263027;
+  font-family: "Montserrat", Helvetica, sans-serif;
+  font-size: 0.85rem;
+}
+
+.container {
+  display: grid;
+  grid-template-columns: 1fr 4fr;
+  height: 100vh;
+  width: 100vw;
+  color: var(--black);
+  background-color: var(--light-grey);
+}
+
+.sidebar {
+  background-color: var(--pink);
+  color: var(--white);
+  grid-row: 1 / 3;
+  display: grid;
+  gap: 5px;
+  align-items: start;
+  justify-items: start;
+}
+
+.logoImg {
+  height: 4vh;
+  width: 2vw;
+}
+
+.icon {
+  height: 3vh;
+}
+
+.avatar {
+  height: 6vh;
+}
+
+.avatar-badge {
+  height: 10vh;
+}
+
+.logo, .upper-btns > div, .lower-btns > div {
+  display: grid;
+  grid-template-columns: 1fr 5fr;
+  gap: 10px;
+  align-items: center;
+  justify-items: start;
+  margin-left: 15px;
+  padding: 8px;
+}
+
+.top-row1 {
+  display: grid;
+  grid-template-columns: 2fr 1fr;
+  align-items: center;
+  justify-items: center;
+}
+
+.top-row1-left {
+  display: grid;
+  grid-template-columns: 1fr 5fr;
+  justify-items: stretch;
+}
+
+.top-row1-right {
+  display: grid;
+  grid-template-columns: 1fr 1fr 3fr;
+  align-items: center;
+}
+
+input {
+  min-width: 450px;
+  border-radius: 8px;
+  background-color: var(--light-grey);
+  color: var(--white);
+}
+
+.topbar {
+  background-color: var(--white);
+  grid-row: 1 / 2;
+  min-height: 150px;
+  box-shadow: 0 0 8px var(--black);
+}
+
+.middle {
+  grid-row: 2 / 3;
+  height: 80vh;
+}
+
+button {
+  border-radius: 20px;
+  padding: 8px 25px;
+  background-color: var(--pink);
+  color: var(--white);
+  width: 125px;
+}
+
+.top-row2 {
+  display: grid;
+  grid-template-columns: 1fr 5fr 4fr;
+}
+
+.top-row2-left, .top-row2-right {
+  display: grid;
+}
+
+.top-row2-left {
+  grid-template-columns: 1fr 2fr; 
+  grid-column: 1 / 3;
+  justify-items: end;
+  align-items: center;
+}
+
+.top-row2-right {
+  grid-template-columns: 1fr 1fr 1fr;
+  align-items: end;
+  justify-items: end;
+  grid-column: -1 / -2;
+  margin-right: 20px;
+}
+
+.small {
+  font-size: small;
+  margin-left: -20px;
 }
