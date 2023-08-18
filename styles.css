@@ -39,7 +39,10 @@
   background-color: var(--white);
   grid-row: 1 / 2;
   min-height: 130px;
+  max-height: 400px;
   box-shadow: 0 0 10px var(--black);
+  overflow: hidden;
+  padding-top: 3px;
 }
 
 .middle {
@@ -48,7 +51,7 @@
   display: grid;
   grid-template-columns: 2.5fr 1fr;
   gap: 10px;
-  overflow: hidden;
+  overflow: auto;
 }
 
 h2 {
@@ -76,7 +79,7 @@ h3 {
 }
 
 .avatar-badge {
-  height: 10vh;
+  height: 8vh;
   justify-self: end;
 }
 
@@ -176,7 +179,7 @@ button {
 
 .project-grid {
   display: grid;
-  grid-template-columns: repeat(2, 1fr);
+  grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
   grid-template-rows: repeat(3, 1fr);
   gap: 15px;
   margin: 15px;
